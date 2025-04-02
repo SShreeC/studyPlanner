@@ -10,7 +10,7 @@ router.post('/generate-quiz', async (req, res) => {
       return res.status(400).json({ error: 'Topic is required' });
     }
 
-    const genAI = new GoogleGenerativeAI("AIzaSyArDhbfkps_qwlonVc8j-Qw1kjiTXmMGuA");
+    const genAI = new GoogleGenerativeAI(ADD API KEY);
     
     // Define schema to match expected quiz format
     const schema = {
